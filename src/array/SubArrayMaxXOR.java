@@ -21,6 +21,7 @@ public class SubArrayMaxXOR {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
+
         System.out.println(maxSubArrayXOR(a,n));
 
     }
