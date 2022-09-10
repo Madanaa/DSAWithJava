@@ -4,25 +4,25 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class CumulativeArray {
+    static  int[] cumulativeArray(int array[]) {
+        int sum = 0;
+        for (int i = 0; i < array.length;i++) {
+            sum = array[i] + sum;
+            array[i]=sum;
+        }
+        return array;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int a[] = new int[n];
-        for (int i = 0; i < n; i++) {
-            a[i] = sc.nextInt();
+        int array[] = new int[n];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = sc.nextInt();
         }
-        int sum[] = cumulativSum(a);
-       for (int i = 0; i < sum.length;i++) {
-           System.out.print(sum[i]+" ");
-       }
-    }
-    public static int[] cumulativSum(int a[]) {
-        int sum = 0;
-        for (int i = 0; i < a.length; i++) {
-            sum = sum +a[i];
-            a[i] = sum;
+        int a[] = cumulativeArray(array);
+        for (int i = 0; i < a.length;i++){
+            System.out.println(a[i]+" ");
         }
-        return a;
     }
 
 }

@@ -15,5 +15,8 @@ public class IteratorDemo {
             String str = stringIterator.next();
             System.out.println(str);
         }
+        for (String str : list) {
+            System.out.println(str);
+        }
     }
 }
