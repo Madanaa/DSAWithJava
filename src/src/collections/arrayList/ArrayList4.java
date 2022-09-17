@@ -11,7 +11,8 @@ public class ArrayList4 {
         list.add("Mohan");
         System.out.println(list);
         // after remove at 0 index
-        list.remove(0);
+        list.add(1,"Gangwar");
+        //list.remove(0);
         System.out.println(list);
        list.remove("Karan");
         System.out.println(list);
