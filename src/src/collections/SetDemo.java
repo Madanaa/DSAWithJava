@@ -9,7 +9,9 @@ public class SetDemo {
         set.add("Madan");
         set.add("C2");
         set.add("Gangwar");
+        System.out.println(set.contains("Madan"));
        // SetDemo setDemo = new SetDemo();
+
 //
         for (String str : set) {
             System.out.println(str);
