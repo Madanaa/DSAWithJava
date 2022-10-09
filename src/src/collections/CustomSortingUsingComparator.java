@@ -55,8 +55,6 @@ class App{
                  return 1;
              } else
                  return 0;
-
-
          }
      };
         Set<CustomSortingUsingComparator<Integer,String>> set = new TreeSet<>(COMPARATOR_LENGTH_BY_NAME);
