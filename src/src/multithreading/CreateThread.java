@@ -16,8 +16,8 @@ public class CreateThread extends Thread {
 }
 class A {
     public static void main(String[] args) throws InterruptedException {
-       CreateThread t = new CreateThread();
-        t.start();
+       CreateThread t = new CreateThread();//new (born) stage
+        t.start(); // runnable (ready)
         for (int i = 0; i <= 5;i++) {
             System.out.println("Gangwar");
             sleep(1000);
