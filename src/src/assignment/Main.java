@@ -22,6 +22,10 @@ public class Main {
         System.out.println(stringSet);
 
 
+        for (Map.Entry<String,CityDetails> filter : map.entrySet()) {
+            System.out.println("Ket = " +filter.getKey()+ " Value = "+filter.getValue());
+        }
+
 //        map.forEach((integer, cityDetails) -> {
 //            cityDetails.getCityNamebyState("Delhi");
 //        }
