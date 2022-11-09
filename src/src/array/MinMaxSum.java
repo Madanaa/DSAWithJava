@@ -17,7 +17,7 @@ public class MinMaxSum {
     }
 
     public static void main(String[] args) {
-        int a[] = {1,4,8,7};
+        int a[] = {1,3,5,7,9};
         int n = a.length;
         System.out.println(findSum(a,n));
     }
